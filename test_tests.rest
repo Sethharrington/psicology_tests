@@ -12,23 +12,74 @@ POST http://localhost:8080/contacts
 Content-Type: application/json
 
 {
-  "firstName": "FirstName",
-  "lastName": "LastName",
-  "email": "email@ts.co",
-  "favoriteColor": "Gray",
-  "birthday": "01/20/1920"
+  "testType": "personality",
+  "testName": "PAI",
+  "questions": [
+    {
+      "question": "Are you comfortable in social situations?",
+      "questionType": "single choice",
+      "options": [
+        {
+          "optionNumber": 0,
+          "option": "Strongly Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 1,
+          "option": "Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 2,
+          "option": "Neutral",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Describe your biggest strength",
+      "questionType": "text",
+      "options": []
+    }
+  ]
 }
+
 
 ### Update a contact by ID
 PUT http://localhost:8080/contacts/687aa30e0fbc489862c7b163
 Content-Type: application/json
 
 {
-  "firstName": "UpdatedFirstName",
-  "lastName": "UpdatedLastName",
-  "email": "updatedemail@ts.co",
-  "favoriteColor": "Blue",
-  "birthday": "01/20/2020"
+  "testType": "personality",
+  "testName": "PAI",
+  "questions": [
+    {
+      "question": "Are you comfortable in social situations?",
+      "questionType": "single choice",
+      "options": [
+        {
+          "optionNumber": 0,
+          "option": "Strongly Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 1,
+          "option": "Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 2,
+          "option": "Neutral",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Describe your biggest strength",
+      "questionType": "text",
+      "options": []
+    }
+  ]
 }
 
 ### Delete a contact by ID
@@ -49,24 +100,76 @@ POST https://get-contacts-api.onrender.com/contacts/
 Content-Type: application/json
 
 {
-  "firstName": "FirstNameGreatNow",
-  "lastName": "LastName",
-  "email": "email@ts.com",
-  "favoriteColor": "Blue",
-  "birthday": "01/20/1910"
+  "testType": "personality",
+  "testName": "PAI",
+  "questions": [
+    {
+      "question": "Are you comfortable in social situations?",
+      "questionType": "single choice",
+      "options": [
+        {
+          "optionNumber": 0,
+          "option": "Strongly Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 1,
+          "option": "Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 2,
+          "option": "Neutral",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Describe your biggest strength",
+      "questionType": "text",
+      "options": []
+    }
+  ]
 }
+
 
 ### Update a contact by ID
 PUT https://get-contacts-api.onrender.com/contacts/6975244152d93b337bf84c58
 Content-Type: application/json
 
 {
-  "firstName": "UpdatedFirstName",
-  "lastName": "UpdatedLastName",
-  "email": "updatedemail@ts.co",
-  "favoriteColor": "Blue",
-  "birthday": "01/25/1910"
+  "testType": "personality",
+  "testName": "PAI",
+  "questions": [
+    {
+      "question": "Are you comfortable in social situations?",
+      "questionType": "single choice",
+      "options": [
+        {
+          "optionNumber": 0,
+          "option": "Strongly Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 1,
+          "option": "Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 2,
+          "option": "Neutral",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Describe your biggest strength",
+      "questionType": "text",
+      "options": []
+    }
+  ]
 }
+
 
 ### Delete a contact by ID
 DELETE https://get-contacts-api.onrender.com/contacts/6975244152d93b337bf84c58
