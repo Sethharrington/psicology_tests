@@ -1,0 +1,32 @@
+{
+  "testType": "personality",
+  "testName": "PAI",
+  "questions": [
+    {
+      "question": "Are you comfortable in social situations?",
+      "questionType": "single choice",
+      "options": [
+        {
+          "optionNumber": 0,
+          "option": "Strongly Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 1,
+          "option": "Disagree",
+          "isCorrect": false
+        },
+        {
+          "optionNumber": 2,
+          "option": "Neutral",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Describe your biggest strength",
+      "questionType": "text",
+      "options": []
+    }
+  ]
+}

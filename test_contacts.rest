@@ -1,0 +1,72 @@
+//////////////////////////////////
+//          LOCALHOST           //
+//////////////////////////////////
+### Get all contacts
+GET http://localhost:8080/contacts
+
+### Get contact by ID
+GET http://localhost:8080/contacts/687aa30e0fbc489862c7b163
+
+### Create a new contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "FirstName",
+  "lastName": "LastName",
+  "email": "email@ts.co",
+  "favoriteColor": "Gray",
+  "birthday": "01/20/1920"
+}
+
+### Update a contact by ID
+PUT http://localhost:8080/contacts/687aa30e0fbc489862c7b163
+Content-Type: application/json
+
+{
+  "firstName": "UpdatedFirstName",
+  "lastName": "UpdatedLastName",
+  "email": "updatedemail@ts.co",
+  "favoriteColor": "Blue",
+  "birthday": "01/20/2020"
+}
+
+### Delete a contact by ID
+DELETE http://localhost:8080/contacts/687aa30e0fbc489862c7b163
+
+
+//////////////////////////////////
+//          PRODUCTION          //
+//////////////////////////////////
+### Get all contacts
+GET https://get-contacts-api.onrender.com/contacts
+
+### Get contact by ID
+GET https://get-contacts-api.onrender.com/contacts/687aa30e0fbc449862c7b263
+
+### Create a new contact
+POST https://get-contacts-api.onrender.com/contacts/
+Content-Type: application/json
+
+{
+  "firstName": "FirstNameGreatNow",
+  "lastName": "LastName",
+  "email": "email@ts.com",
+  "favoriteColor": "Blue",
+  "birthday": "01/20/1910"
+}
+
+### Update a contact by ID
+PUT https://get-contacts-api.onrender.com/contacts/6975244152d93b337bf84c58
+Content-Type: application/json
+
+{
+  "firstName": "UpdatedFirstName",
+  "lastName": "UpdatedLastName",
+  "email": "updatedemail@ts.co",
+  "favoriteColor": "Blue",
+  "birthday": "01/25/1910"
+}
+
+### Delete a contact by ID
+DELETE https://get-contacts-api.onrender.com/contacts/6975244152d93b337bf84c58
