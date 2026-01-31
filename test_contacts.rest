@@ -39,13 +39,13 @@ DELETE http://localhost:8080/contacts/687aa30e0fbc489862c7b163
 //          PRODUCTION          //
 //////////////////////////////////
 ### Get all contacts
-GET https://get-contacts-api.onrender.com/contacts
+GET https://psicology-tests.onrender.comcontacts
 
 ### Get contact by ID
-GET https://get-contacts-api.onrender.com/contacts/687aa30e0fbc449862c7b263
+GET https://psicology-tests.onrender.comcontacts/687aa30e0fbc449862c7b263
 
 ### Create a new contact
-POST https://get-contacts-api.onrender.com/contacts/
+POST https://psicology-tests.onrender.comcontacts/
 Content-Type: application/json
 
 {
@@ -57,7 +57,7 @@ Content-Type: application/json
 }
 
 ### Update a contact by ID
-PUT https://get-contacts-api.onrender.com/contacts/6975244152d93b337bf84c58
+PUT https://psicology-tests.onrender.comcontacts/6975244152d93b337bf84c58
 Content-Type: application/json
 
 {
@@ -69,4 +69,4 @@ Content-Type: application/json
 }
 
 ### Delete a contact by ID
-DELETE https://get-contacts-api.onrender.com/contacts/6975244152d93b337bf84c58
+DELETE https://psicology-tests.onrender.comcontacts/6975244152d93b337bf84c58
