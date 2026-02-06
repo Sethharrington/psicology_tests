@@ -7,7 +7,7 @@ const doc = {
     description: "Description",
   },
   host: "psicology-tests.onrender.com",
-  // host: "localhost:8080", // Use localhost for local development
+  // host: "localhost:3000", // Use localhost for local development
   schemes: ["http", "https"], // Use both https and http for production
   definitions: {
     Contact: contact,
