@@ -8,12 +8,17 @@ router.get("/login", passport.authenticate("github"), (req, res) => {
   res.send("");
 });
 
-router.get("logout", function (req, res, next) {
+router.get("/logout", function (req, res, next) {
   req.logout(function (err) {
     if (err) {
       return next(err);
     }
-    res.redirect("/");
+    req.session.destroy((err) => {
+      if (err) {
+        return next(err);
+      }
+      res.redirect("/");
+    });
   });
 });
 module.exports = router;
